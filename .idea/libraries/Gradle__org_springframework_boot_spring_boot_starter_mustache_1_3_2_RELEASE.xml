@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-mustache:1.3.2.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-mustache/1.3.2.RELEASE/e1d207037298cf8d2443c2ac84f26258a724ab22/spring-boot-starter-mustache-1.3.2.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-mustache/1.3.2.RELEASE/4fcde4dc9c22d290ad225146b261f039e837ff80/spring-boot-starter-mustache-1.3.2.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
