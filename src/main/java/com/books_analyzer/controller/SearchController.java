@@ -16,8 +16,8 @@ public class SearchController {
 	public String search(
 			@RequestParam(value = "title", required=false) String title,
 			@RequestParam(value = "author", required=false) String author,
-			@RequestParam(value = "character", required=false) String character
-			//@RequestParam(value = "url", required=false) String url
+			@RequestParam(value = "character", required=false) String character,
+			@RequestParam(value = "url", required=false) String url
 	)  {
 
 		System.out.println("SeachController: The parameters received are-");
@@ -26,6 +26,6 @@ public class SearchController {
     	/*booksProcessor = new BooksProcessor(title, author, character, url);
     	booksProcessor.process();
     	return booksProcessor.getJSON();*/
-		return booksProcessor.search(title,author,character);
+		return booksProcessor.search(title,author,character,url);
 	}
 }

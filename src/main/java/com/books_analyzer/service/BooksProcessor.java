@@ -30,25 +30,24 @@ public class BooksProcessor {
 	private ArrayList<Book> books;
 	/*private final String titleParam;
 	private final String authorParam;
-	private final String characterParam;*/
+	private final String characterParam;
+	private final String urlParam;*/
 	private String titleParam;
 	private String authorParam;
 	private  String characterParam;
-	private final String urlParam;
+	private String urlParam;
 	private String json;
 	private DBInterface dbInterface;
 
 	ObjectMapper mapper = new ObjectMapper();
 
 	// This constructor is called from the search controller
-	//public BooksProcessor(String t, String a, String c, String u) {
-	public BooksProcessor(String t, String a, String c) {
+	public BooksProcessor(String t, String a, String c, String u) {
 		this.books = new ArrayList<Book>();
 		this.titleParam = t;
 		this.authorParam = a;
 		this.characterParam = c;
-		//this.urlParam = u;
-		this.urlParam = "book-analyzer.herokuapp.com";
+		this.urlParam = u;
 		this.dbInterface = new DBInterface();
 	}
 
@@ -143,11 +142,12 @@ public class BooksProcessor {
 		return sb.toString();
 	}
 
-	public String search(String title,String author,String character){
+	public String search(String title,String author,String character,String url){
 
 		titleParam = title;
 		authorParam = author;
 		characterParam = character;
+		urlParam = url;
 		return process();
 	}
 }
